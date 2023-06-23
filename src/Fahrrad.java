@@ -1,12 +1,12 @@
 public class Fahrrad {
     // Attribute
-    public int radgröße;     // Angabe in Zoll
-    public String farbe;
-    public String art;
-    public int gangzahl;
-    public int aktuellerGang;
-    public boolean elektroAntrieb;
-    public double akkuStand;
+    private int radgröße;     // Angabe in Zoll
+    private String farbe;
+    private String art;
+    private int gangzahl;
+    private int aktuellerGang;
+    private boolean elektroAntrieb;
+    private double akkuStand;
 
     /*
      * ACHTUNG: JAVA MAGIE (Automatismus)
@@ -50,6 +50,18 @@ public class Fahrrad {
     public Fahrrad(int radgröße, String farbe, String art, int gangzahl,
                    int aktuellerGang) {
         this(radgröße, farbe, art, gangzahl, aktuellerGang, false, 0.0);
+    }
+
+    public double getAkkuStand() {
+        return akkuStand;
+    }
+
+    public int getRadgröße() {
+        return radgröße;
+    }
+
+    public int getAktuellerGang() {
+        return aktuellerGang;
     }
 
     // Methoden (aka Operationen, Aktionen, Tätigkeiten)

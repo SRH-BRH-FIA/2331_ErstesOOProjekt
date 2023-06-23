@@ -14,5 +14,10 @@ public class Main {
         System.out.println("Rad2: Aktueller Gang: "
                 + rad2.aktuellerGang);
         System.out.println("Rad3: Radgröße: " + rad3.radgröße);
+
+        Helikopter blauerHeli = new Helikopter(750, 6000, "blau", 2500);
+        blauerHeli.abheben();
+        System.out.println("Heli ist bei " + blauerHeli.aktuelleFlughöhe + "m");
+        blauerHeli.landen();
     }
 }
